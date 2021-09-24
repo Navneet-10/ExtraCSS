@@ -6,10 +6,10 @@
 div.container {
     display: flex;
     align-items: center;
-    /*------ for animation 1 -----*/
+    /*------ for transition 1 -----*/
     /* justify-content: center; */
     /* ------------------------*/
-    /* -----for animation 2----- */
+    /* -----for transition 2----- */
     justify-content: flex-start;
     background-color:black;
     /* ------------------------ */
@@ -24,7 +24,7 @@ div.container div.ball {
     transition-timing-function: cubic-bezier(0.42, 0, 0.68, 1.19);
 }
 
-/* animaton 1 */
+/* transition 1 */
 /* div.container div.ball:hover {
 
     transform: rotateZ(90deg);
@@ -34,12 +34,12 @@ div.container div.ball {
     cursor: pointer;
 } */
 
-/* animation 2 */
+/* Transition 2 */
 div.container:hover div.ball {
 
     transform: rotateZ(90deg);
     transform: scale(2);
-    transform: translateX(500px);
+    transform: translateX(1400px);
     border-radius: 50%;
     cursor: pointer;
 }
