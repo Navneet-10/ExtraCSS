@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.container {
+    display: flex;
+    align-items: center;
+    /*------ for animation 1 -----*/
+    /* justify-content: center; */
+    /* ------------------------*/
+    /* -----for animation 2----- */
+    justify-content: flex-start;
+    background-color:black;
+    /* ------------------------ */
+    height: 30vh;
+}
+
+div.container div.ball {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.68, 1.19);
+}
+
+/* animaton 1 */
+/* div.container div.ball:hover {
+
+    transform: rotateZ(90deg);
+    transform: scale(2);
+    transform: translateY(300px);
+    border-radius: 50%;
+    cursor: pointer;
+} */
+
+/* animation 2 */
+div.container:hover div.ball {
+
+    transform: rotateZ(90deg);
+    transform: scale(2);
+    transform: translateX(500px);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
